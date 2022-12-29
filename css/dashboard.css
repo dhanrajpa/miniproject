@@ -1,0 +1,85 @@
+
+body,*{
+    scrollbar-width: none;
+}
+
+#dashboard_form {
+    height: 1000px;
+    width: 100%;
+    background-color: rgb(253, 255, 254);
+    display: none;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    /* margin-top: 100px; */
+}
+
+#dash_car {
+    /* margin-left: 500px; */
+    margin: 50px 0px 0px 500px;
+    padding: 0px 35px 0 35px;
+    height: 850px;
+    width: 600px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: aliceblue;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+textarea::placeholder {
+    text-align: center;
+    /* align-items: center; */
+    padding-top: 20px;
+}
+
+
+input::placeholder{
+    color:rgba(211, 211, 211, 0.76);
+}
+
+.event{
+    justify-content: center;
+    display: flex;
+    width: 25rem;
+    height: 4rem;
+    margin: 0px;
+    padding: 0px;
+}
+.cont{
+    display: flex;
+    flex-direction: column;
+}
+#subcat{
+    /* display: inline-block; */
+width:100%
+}
+
+.lb{
+    text-align: left;
+    font-size: 18px;
+    width: 60%;
+    /* height: 20px; */
+    font-size: 15px;
+    /* float: left; */
+    margin: 0;
+    padding: 0;
+  line-height:50px;
+}
+
+#lb_date{
+    width: 200px;
+    /* float: left; */
+}
+
+#date{
+    width: 10rem;
+    }
+
+
+
+/* profile csss */
+
+

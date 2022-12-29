@@ -1,0 +1,122 @@
+{
+  "ProfileArtist": [
+    {
+      "categ": "Music",
+      "profile_pic": "C:\\fakepath\\NOORAN-SISTERS.jpg",
+      "image": "C:\\fakepath\\NOORAN-SISTERS.jpg",
+      "bio": "The Nooran Sisters are Sultana Nooran (born 14 June 1992) and Jyoti Nooran (born 24 February 1994) who are a devotional Islamic (Sufi) singing duo from Jalandhar, India. Born to a family of Sufi musicians, they perform Sham Chaurasia gharana classical music.",
+      "Event_details": "1",
+      "event_fees": "1",
+      "R_Fees": "1",
+      "id": 2
+    },
+    {
+      "categ": "Actor",
+      "profile_pic": "C:\\fakepath\\tom-cruise-secret-life.webp",
+      "image": "C:\\fakepath\\TomCruise.jfif",
+      "bio": "Tom Cruise and Brooke Shields who starred in Endless Love had a public spat in early 2000s and it's when the Top Gun: Maverick star was advocating his Scientology beliefs that he called out the actress for her usage of anti-depressants while dealing with postpartum depression. In 2005, Cruise appeared on a sit-down interview with Today's Matt Lauer to promote his film War of the Worlds. ",
+      "Event_details": "NA",
+      "event_fees": "NA",
+      "R_Fees": "NA",
+      "id": 4
+    },
+    {
+      "categ": "Music",
+      "profile_pic": "C:\\fakepath\\ammy.jfif",
+      "image": "C:\\fakepath\\ammy.jfif",
+      "bio": "",
+      "Event_details": "NA",
+      "event_fees": "NA",
+      "R_Fees": "NA",
+      "id": 5
+    },
+    {
+      "categ": "Music_Artist",
+      "profile_pic": "C:\\fakepath\\Johnny_Depp.webp",
+      "image": "C:\\fakepath\\Johnny_Depp.webp",
+      "bio": "Considered one of the most successful actors of all time, Johnny Depp has formed a solid bond with moviegoers spanning multiple generations due to his ability to fully absorb himself into an assortment of dynamic characters. The talented actor’s real life story is filled with equally surprising twists and turns at par with the plots of some of the movies he's starred in throughout his career. During his early years, Depp had musical aspirations; however, it wasn't long before he discovered the allure of the big screen. The versatile actor emerged from his teen idol days to find success in a string box office hits. ",
+      "Event_details": "NA",
+      "event_fees": "NA",
+      "R_Fees": "NA",
+      "id": 6
+    },
+    {
+      "categ": "Actor",
+      "profile_pic": "C:\\fakepath\\thorDada.webp",
+      "image": "C:\\fakepath\\thorDada.webp",
+      "bio": "Thor thats enough",
+      "Event_details": "NA",
+      "event_fees": "NA",
+      "R_Fees": "NA",
+      "id": 7
+    },
+    {
+      "categ": "Singer",
+      "profile_pic": "C:\\fakepath\\Tailor_swift.jfif",
+      "image": "C:\\fakepath\\Tailor_swift.jfif",
+      "bio": "Taylor Alison Swift (born December 13, 1989) is an American singer-songwriter. Her discography spans multiple genres, and her narrative songwriting—often inspired by her personal life—has received critical praise and widespread media coverage. Born in West Reading, Pennsylvania, Swift moved to Nashville, Tennessee, at the age of 14 to pursue a career in country music.",
+      "Event_details": "NA",
+      "event_fees": "NA",
+      "R_Fees": "NA",
+      "id": 8
+    }
+  ],
+  "people": [
+    {
+      "name": "ram",
+      "email": "ram@gmail.com",
+      "gender": "Male",
+      "password": "1234",
+      "category": "user",
+      "id": 1
+    },
+    {
+      "name": "ashish",
+      "email": "ashish@gmail.com",
+      "gender": "Male",
+      "password": "1111",
+      "category": "artist",
+      "id": 2
+    },
+    {
+      "name": "Dhanraj Anil Patil",
+      "email": "dhanrajpa@cybage.com",
+      "gender": "Male",
+      "password": "1234",
+      "category": "user",
+      "id": 9
+    },
+    {
+      "name": "Rajiv",
+      "email": "rajiv@gmail.com",
+      "gender": "Male",
+      "password": "1111",
+      "category": "user",
+      "id": 10
+    },
+    {
+      "name": "ddfas",
+      "email": "dddd@cybage.com",
+      "gender": "Male",
+      "password": "1111",
+      "category": "user",
+      "id": 11
+    },
+    {
+      "name": "asasdas",
+      "email": "asasddasdsasad",
+      "gender": "Male",
+      "password": "1111",
+      "category": "user",
+      "id": 12
+    },
+    {
+      "name": "yuyfu",
+      "email": "ttfyt",
+      "gender": "Male",
+      "password": "1111",
+      "category": "user",
+      "id": 13
+    }
+  ]
+}

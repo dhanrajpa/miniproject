@@ -1,0 +1,41 @@
+#email,
+#pswd {
+    text-align: left;
+}
+
+#email>label,
+#pswd>label {
+    width: 200px;
+    font-weight: 100;
+    font-size: 20px;
+    margin: 0;
+
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+
+#Login {
+    padding: 8rem 0 0 0;
+    height: 55rem;
+    width: 100%;
+    background-color: rgb(238, 250, 246);
+    background-image: url('../images/guitar-g8eefa99b0_1920.jpg');
+    background-size: cover;
+    display: none;
+    justify-content: center;
+
+
+}
+
+
+
+#card_login {
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+        rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+        rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+        rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+        rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}

@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/aboutus.css">
+    <link rel="stylesheet" href="../css/contactus.css">
+    <link rel="stylesheet" type="text/css" href="../css/dashboard.css">
+    <link rel="stylesheet" type="text/css" href="../css/app.css">
+    <link rel="stylesheet" type="text/css" href="../css/login.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="../dashboard.js"></script>
+    <script src="../app.js"></script>
+    <!-- <script src="./log.js"></script> -->
+
+
+</head>
+
+
+<body>
+    <header>
+        <nav>
+            <div class="nav" id="nave">
+                <label for="toggle1">&#9776</label>
+                <input type="checkbox" id="toggle1" />
+                <div class="nav_menu">
+                    <a href="./app.html">कलाKendra</a>
+                    <a href="#" id="btn_logout" onclick="logout()">LogOut</a>
+
+                    <a href="#" id="btn_prof">Edit Profile</a>
+                    <a href="../aboutus.html">About Us</a>
+                    <a href="./contactus.html">Contact Us</a>
+
+                    <div class="nav_search">
+                        <table class="Tsearch">
+                            <th>
+                            <td>
+                                <input type="text" name="search" id="search"
+                                    placeholder="   Hi....Search for an artist here!!">
+                            </td>
+                            <td>
+                                <button id="btn_search" class="btn btn-dark">search</button>
+
+                            </td>
+                            </th>
+                        </table>
+                    </div>
+                </div>
+
+
+            </div>
+        </nav>
+    </header>
+
+    <div id="dashboard_form"
+        style="background-image: url('./images/violin-g9bded087e_1920.jpg');background-position: center;background-size: cover;">
+        <div class="col-md-4" id="dash_car">
+            <div class="cont">
+                <form action="" role="form">
+                    <div class="rows mt-1 col-md-3">
+                        <label class="event ">Profile Details</label>
+                        <br>
+                    </div>
+                    <div class="rows " id="subCat">
+                        <label class="form-label lb" for="iscat">Art Catagories</label>
+                        <input type="text" class="form-control-sm form-control" id="iscat">
+                    </div>
+                    <div class="rows" class="sfile">
+                        <label class="form-label lb" for="pcustomFile">Upload Profile Pic</label>
+                        <input type="file" class="form-control-sm form-control" id="pcustomFile" />
+                    </div>
+                    <div class="rows" class="sfile">
+                        <label class="form-label lb" for="icustomFile">Upload image</label>
+                        <input type="file" class="form-control-sm form-control" id="icustomFile" />
+                    </div>
+
+                    <div class="rows" id="ip_bio">
+                        <label for="bio" id="label_bio" class="form-label lb">Bio details </label>
+                        <textarea class="form-control-sm form-control" id="bio" rows="3"></textarea>
+
+                    </div>
+                    <label class="event ">Event</label>
+
+                    <div class="rows mt-2" id="evdet">
+                        <label class="form-label lb" for="eved">Event/Training details</label>
+                        <input type="text" class="form-control-sm form-control" id="eved">
+                    </div>
+                    <div class="rows mt-1" id="Evfess">
+                        <label class="form-label lb" for="Evfesss">Event fees</label>
+                        <input type="text" class="form-control-sm form-control" id="Evfesss">
+                    </div>
+                    <div class="rows" id="fees">
+                        <label class="form-label lb" for="Rfees">Training fees-includeing Registarion</label>
+                        <input type="text" class="form-control-sm form-control" id="Rfees">
+                    </div>
+                    <div class="mt-2">
+                        <button type="button" id="dashboard_btn" class="btn btn-dark">Save</button>
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div id="pic">
+        <div class="profile" style="flex-direction: column;">
+            <div class="basic_info"
+                style="width: 100%;height: 300px;display: flex;justify-content: flex-start;margin-top: 20px;background-color: rgb(249, 215, 213);">
+                <div class="div_profile_pic" style="overflow: hidden;display: flex;justify-content: center;align-items: center; width: 40%;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            height: 300px;">
+                    <img class="prof_pic" src="../images/NOORAN-SISTERS.jpg" alt="profile_pic"
+                        style="height: 300px; width: 300px;">
+                </div>
+                <div class="profile_bio"
+                    style="  width: 60%;text-align: center;font-size: 15px;font-weight: 500;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;text-decoration: none;font-family: 'Courier New', Courier, monospace;overflow: hidden;text-align: justify;padding-left: 20px;padding-right: 200px;padding-top: 30px;">
+                    <p>The Nooran Sisters are Sultana Nooran (born 14 June 1992) and Jyoti Nooran (born 24 February
+                        1994) who are a devotional Islamic (Sufi) singing duo from Jalandhar, India. Born to a family of
+                        Sufi musicians, they perform Sham Chaurasia gharana classical music.</p>
+                </div>
+
+            </div>
+
+            <div class="event_detailss" style="text-align: center;display: block;margin: auto;width: 400px;background-color: rgb(251, 235, 235);box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;margin-top: 20px;">
+                <p>Name: Noorani Sisters</p>
+                <p>Gender : Female</p>
+                <p>Age : 32 & 41</p>
+                <p id="desc">Event : Info Not Available</p>
+                <p id="fees">Training and registraion fees : NA</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="pic">
+        <div class="profile" style="flex-direction: column;">
+            <div class="basic_info"
+                style="width: 100%;height: 300px;display: flex;background-color: rgb(249, 215, 213);justify-content: flex-start;margin-top: 20px;">
+                <div class="div_profile_pic" style="overflow: hidden;display: flex; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;justify-content: center;align-items: center; width: 40%;
+            height: 300px;">
+                    <img class="prof_pic" src="./images/TomCruise.jfif" alt="profile_pic"
+                        style="height: 300px; width: 300px;">
+                </div>
+                <div class="profile_bio"
+                    style=" box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; width: 60%;text-align: center;font-size: 15px;font-weight: 400;text-decoration: none;font-family: 'Courier New', Courier, monospace;overflow: hidden;text-align: justify;padding-left: 20px;padding-right: 200px;padding-top: 30px;">
+                    Thomas Cruise Mapother IV (born July 3, 1962), better known as Tom Cruise, is an American actor and
+                    producer. One of the world's highest-paid actors,[1] he has received various accolades, including an
+                    Honorary Palme d'Or and three Golden Globe Awards, in addition to nominations for three Academy
+                    Awards. His films have grossed over $4 billion in North America and over $10.1 billion worldwide,[2]
+                    making him one of the highest-grossing box office stars of all time.[3]
+                    Since then, Cruise has largely starred in science fiction and action films, establishing himself as
+                    an action star, often performing his own risky stunts. He has played Ethan Hunt in all six of the
+                    Mission: Impossible films from 1996 to 2018. His other notable roles in the genre include Vanilla
+                    Sky (2001), Minority Report (2002), The Last Samurai (2003), Collateral (2004), War of the Worlds
+                    (2005), Knight and Day (2010), Jack Reacher (2012), Oblivion (2013), Edge of Tomorrow (2014), and
+                    Top Gun: Maverick (2022). The last of these ranks as his highest-grossing release.
+                </div>
+
+            </div>
+
+            <div class="event_detailss" style="text-align: center;display: block;background-color: rgb(251, 235, 235);margin: auto;width: 400px;box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;margin-top: 20px;">
+               
+                <p>name: Tom Cruise</p>
+                <p>Gender : Male</p>
+                <p>Age : 60</p>
+                <p id="desc">Event : Info Not Available</p>
+                <p id="fees">Training and registraion fees : NA</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="pic">
+        <div class="profile" style="flex-direction: column;">
+            <div class="basic_info"
+                style="width: 100%;height: 300px;display: flex;justify-content: flex-start;background-color: rgb(249, 215, 213);margin-top: 20px;">
+                <div class="div_profile_pic" style="overflow: hidden;display: flex; justify-content: center;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;align-items: center; width: 40%;
+            height: 300px;">
+                    <img class="prof_pic" src="./images/Johnny_Depp.webp" alt="profile_pic"
+                        style="height: 300px; width: 300px;">
+                </div>
+                <div class="profile_bio"
+                    style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;  width: 60%;text-align: center;font-size: 15px;font-weight: 500;text-decoration: none;font-family: 'Courier New', Courier, monospace;overflow: hidden;text-align: justify;padding-left: 20px;padding-right: 200px;padding-top: 30px;">
+                    Hussain played on George Harrison's 1973 album Living in the Material World and John Handy's 1973
+                    album Hard Work. He also performed on Van Morrison's 1979 album Into the Music and Earth, Wind &
+                    Fire's 1983 album Powerlight.[4]
+
+                    Mickey Hart of the Grateful Dead, who had known Zakir since the 1960s,[5] invited him to create the
+                    special album Planet Drum, featuring legendary drummers from different parts of the world. Featured
+                    along with Zakir, from India, was Vikku Vinayakram, with whom Zakir had collaborated in Shakti. The
+                    first Planet Drum album, released in 1991 on the Rykodisc label, went on to earn the 1992 Grammy
+                    Award for Best World Music Album, the first Grammy ever awarded in this category.[6][7] The Global
+                    Drum Project album and tour brought Mickey Hart, Zakir Hussain, Sikiru Adepoju, and Giovanni Hidalgo
+                    together again in a reunion sparked by the 15th anniversary of the ground-breaking album Planet
+                    Drum. The album Global Drum Project won the Grammy Award for Best Contemporary World Music Album at
+                    the 51st Grammy Awards Ceremony held on 8 February 2009.)[8]
+                </div>
+
+            </div>
+
+            <div class="event_detailss" style="text-align: center;display: block;margin: auto;width: 400px;background-color: rgb(251, 235, 235);box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;margin-top: 20px;">
+               
+                <p>Name : Zakir Hussain</p>
+                <p>Gender : Male</p>
+                <p>Age : 60</p>
+                <p id="desc">Event : Info Not Available</p>
+                <p id="fees">Training and registraion fees : NA</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="pic">
+        <div class="profile" style="flex-direction: column;">
+            <div class="basic_info"
+                style="width: 100%;height: 300px;display: flex;justify-content: flex-start;margin-top: 20px;background-color: rgb(249, 215, 213);">
+                <div class="div_profile_pic" style="overflow: hidden;display: flex;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; justify-content: center;align-items: center; width: 40%;
+            height: 300px;">
+                    <img class="prof_pic" src="./images/kk.jfif" alt="profile_pic"
+                        style="height: 300px; width: 300px;">
+                </div>
+                <div class="profile_bio"
+                    style="  width: 60%;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;text-align: center;font-size: 15px;font-weight: 500;text-decoration: none;font-family: 'Courier New', Courier, monospace;overflow: hidden;text-align: justify;padding-left: 20px;padding-right: 200px;padding-top: 30px;">
+                    Krishnakumar Kunnath (23 August 1968 – 31 May 2022), popularly known as KK, was an Indian playback
+                    singer. He recorded songs in several languages, including Hindi, Tamil, Telugu, Kannada, Malayalam,
+                    Marathi, Odia, Bengali, Assamese and Gujarati.[1]
+
+                    KK began his career by singing advertisement jingles, and made his film debut with an A.R. Rahman
+                    soundtrack. In 1999, he launched his debut album titled Pal. The songs "Pal" and "Yaaron" from the
+                    album Pal became very popular and are commonly used in school farewells. His popular songs included
+                    "Tadap Tadap Ke Is Dil Se" from Hum Dil De Chuke Sanam (1999), the Tamil song "Apadi Podu", "Dola Re
+                    Dola" from Devdas (2002), "Kya Mujhe Pyaar Hai" from Woh Lamhe... (2006), "Aankhon Mein Teri" from
+                    Om Shanti Om (2007), "Khuda Jane" from Bachna Ae Haseeno (2008), "Piya Aaye Na" from Aashiqui 2
+                    (2013), "Mat Aazma Re" from Murder 3 (2013), "India Wale" from Happy New Year (2014) and "Tu Jo
+                    Mila" from Bajrangi Bhaijaan (2015).
+                </div>
+
+            </div>
+
+            <div class="event_detailss" style="text-align: center;display: block;margin: auto;width: 400px;background-color: rgb(251, 235, 235);box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;margin-top: 20px;">
+              
+                <p>Name : K.K</p>
+                <p>Gender : Male</p>
+                <p>Age : 54 </p>
+                <p id="desc">Event : Info Not Available</p>
+                <p id="fees">Training and registraion fees : NA</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class=" my-5">
+
+        <footer class="text-center text-dark" style="background-color: rgb(254, 246, 246)">
+
+            <div class="container">
+
+                <section class="mb-2">
+
+                    <div class="row text-center d-flex justify-content-center pt-3 pb-2">
+
+                        <div class="col-md-2">
+                            <h6 class="text-uppercase font-weight-bold">
+                                <a href="../aboutus.html" class="text-dark">About us</a>
+                            </h6>
+                        </div>
+
+
+                        <div class="col-md-2">
+                            <h6 class="text-uppercase font-weight-bold">
+                                <a href="../contactus.html" class="text-dark" id="btn_contact">Contact</a>
+                            </h6>
+                        </div>
+
+                    </div>
+                </section>
+
+                <hr class="my-5" />
+
+                <section class="mb-2">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-md-8">
+                            <p>
+                                Inside you there’s an artist you don’t know about… say yes quickly, if you know, if
+                                you’ve known it from before the beginning of the universe.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="text-center mb-3">
+                    <a href="" class="text-white me-4">
+
+                    </a>
+                    <a href="" class="text-white me-4">
+
+                    </a>
+                    <a href="" class="text-white me-4">
+
+                    </a>
+                    <a href="" class="text-white me-4">
+
+                    </a>
+                    <a href="" class="text-white me-4">
+
+                    </a>
+                    <a href="" class="text-white me-4">
+
+                    </a>
+                </section>
+                <!-- Section: Social -->
+            </div>
+            <!-- Grid container -->
+
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+                © 2022 Copyright:
+                <a class="text-dark" href="#">कलाKendra.com</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+    </div>
+    <!-- End of .container -->
+
+    <!-- <script>
+
+        $(document).ready(function () {
+
+            $("#upload").click(function () {
+                $.post("http://localhost:3000/ProfileArtist",
+                    {
+                        upcomingConcerts: $("#concert").val(),
+                        registerfees: $("#registration").val(),
+                        training: $("#training").val(),
+                        fees: $("#fees").val(),
+                        files: $("#formFileMultiple").val()
+                    },
+                    function (data, status) {
+                        // alert("Data: " + data + "\nStatus: " + status);
+                    });
+            });
+        });
+        //for get
+        $(document).ready
+            (
+                function () {
+                    $("#show").click
+                        (function () {
+                            $.get("http://localhost:3000/dataFromArtist",
+                                function (data, status) {
+                                    //alert("Data: " + data + "\nStatus: " + status);
+                                    for (var i = 0; i < data.length; i++) {
+                                        var obj = data[i];
+                                        document.getElementById("print")
+                                            .innerHTML +=
+                                            obj.upcomingConcerts + "     " + obj.registerfees + "     " + obj.training + "     " + obj.fees + "     " + obj.files + "<br>";
+                                    }
+                                });
+                        });
+                });
+    </script> -->
+</body>
+
+</html>
